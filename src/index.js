@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { applyInitialTheme } from './themes/applyTheme';
+
+// Paint with the last-seen (or previewed) theme while content loads from Supabase
+applyInitialTheme();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
